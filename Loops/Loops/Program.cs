@@ -10,12 +10,20 @@ namespace Loops
     {
         static void Main(string[] args)
         {
+            double answer;
+            double total=0;
+
+            for (int i = 0; i <3; i++)
+            {
+                Console.WriteLine("What did you get on your test?");
+                answer = Convert.ToDouble(Console.ReadLine());
+                total = total + answer;
+            }
+            var average = (total / 3)/100;
             
 
-            for (int i = 0; i <=3; i++)
-            {
-                Console.WriteLine()
-            }
+            Console.WriteLine($"Your test average is {average:P2}");
+            Console.ReadKey();
         }
     }
 }
