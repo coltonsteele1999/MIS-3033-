@@ -20,9 +20,9 @@ namespace Loops
                 total = total + answer;
             }
             var average = (total / 3)/100;
-            
 
-            Console.WriteLine($"Your test average is {average:P2}");
+
+            Console.WriteLine($"Your test average is {average.ToString("P2")}");
             Console.ReadKey();
         }
     }
